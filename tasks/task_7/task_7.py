@@ -115,7 +115,7 @@ class QuizGenerator:
         # Enable a Retriever using the as_retriever() method on the VectorStore object
         # HINT: Use the vectorstore as the retriever initialized on the class
         ############# YOUR CODE HERE ############
-        retriever = self.vectorstore.db.as_retriever(search_kwargs={"k": self.num_questions})
+        retriever = self.vectorstore.as_retriever()
         
         ############# YOUR CODE HERE ############
         # Use the system template to create a PromptTemplate
